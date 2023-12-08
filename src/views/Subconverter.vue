@@ -455,22 +455,22 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
-          "自建": "https://s.669866.xyz/short",
-          "v1.mk": "https://v1.mk/short",
-          "d1.mk": "https://d1.mk/short",
-          "dlj.tf": "https://dlj.tf/short",
-          "suo.yt": "https://suo.yt/short",
-          "sub.cm": "https://sub.cm/short",
+          "dc自建": "https://s.669866.xyz/short",
+          // "v1.mk": "https://v1.mk/short",
+          // "d1.mk": "https://d1.mk/short",
+          // "dlj.tf": "https://dlj.tf/short",
+          // "suo.yt": "https://suo.yt/short",
+          // "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "自建": "https://subapi.home.dazzlechen.com",
-          "肥羊增强型后端【vless+hysteria】": "https://api.v1.mk",
-          "肥羊备用后端【vless+hysteria】": "https://sub.d1.mk",
-          "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
-          nameless13提供: "https://www.nameless13.com",
-          subconverter作者提供: "https://sub.xeton.dev",
-          "sub-web作者提供": "https://api.wcc.best",
-          "sub作者&lhie1提供": "https://api.dler.io",
+          "dc自建": "https://subapi.dazzlechen.com",
+          // "肥羊增强型后端【vless+hysteria】": "https://api.v1.mk",
+          // "肥羊备用后端【vless+hysteria】": "https://sub.d1.mk",
+          // "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
+          // nameless13提供: "https://www.nameless13.com",
+          // subconverter作者提供: "https://sub.xeton.dev",
+          // "sub-web作者提供": "https://api.wcc.best",
+          // "sub作者&lhie1提供": "https://api.dler.io",
         },
         backendOptions: [
           {value: "https://api.v1.mk"},
@@ -875,8 +875,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://subapi.home.dazzlechen.com" : this.getUrlParam(),
-        shortType: "https://v1.mk/short",
+        customBackend: this.getUrlParam() == "" ? "https://subapi.dazzlechen.com" : this.getUrlParam(),
+        shortType: "https://s.669866.xyz/short",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
         includeRemarks: "",
@@ -927,7 +927,7 @@ export default {
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
-    this.tanchuang();
+    // this.tanchuang();
     this.form.clientType = "clash";
     this.getBackendVersion();
     this.anhei();
